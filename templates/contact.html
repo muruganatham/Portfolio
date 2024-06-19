@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    background-color: transparent; /* Make the background transparent */
+    background-image: linear-gradient(45deg, #d0f0c0 25%, transparent 25%), linear-gradient(-45deg, #d0f0c0 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #d0f0c0 75%), linear-gradient(-45deg, transparent 75%, #d0f0c0 75%);
+    background-size: 50px 50px;
+    background-position: 0 0, 0 0, 50px 50px, 50px 50px;
+    animation: backgroundAnimation 10s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0 0, 0 0, 50px 50px, 50px 50px;
+    }
+    100% {
+        background-position: 50px 50px, 50px 50px, 0 0, 0 0;
+    }
+}
+        header {
+            background-color: #0d3b05;
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            font-size: 2.5em; /* Increase header text size */
+        }
+
+        .logo {
+            width: 150px; /* Increase logo size */
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .contact-section {
+            padding: 30px;
+            text-align: left;
+            background: transparent; /* Remove background color */
+        }
+
+        .contact-section h1 {
+            margin-top: 0;
+            font-size: 2em; /* Increase section title size */
+        }
+
+        .contact-info {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 1.2em; /* Increase contact info text size */
+        }
+
+        .contact-info li i {
+            margin-right: 15px;
+            font-size: 1.5em; /* Increase icon size */
+            color: white;
+            background-color: gray;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .contact-info li a {
+            color: #2F6690;
+            text-decoration: none;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="animate__animated animate__fadeInDown">
+            <h1>Contact</h1>
+        </header>
+        <section class="contact-section animate__animated animate__fadeInUp">
+            <h1>Get in Touch</h1>
+            <ul class="contact-info">
+                <li class="animate__animated animate__fadeInLeft"><i class="fas fa-phone"></i> <span>+91 9360682604</span></li>
+                <li class="animate__animated animate__fadeInRight"><i class="fas fa-envelope"></i> <a href="mailto:murukaanand791@gmail.com">murukaanand791@gmail.com</a></li>
+                <li class="animate__animated animate__fadeInLeft"><i class="fab fa-github"></i> <a href="https://github.com/muruganatham" target="_blank">https://github.com/muruganatham</a></li>
+                <li class="animate__animated animate__fadeInRight"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/murugananth%20am-c-b47811236/" target="_blank">https://www.linkedin.com/in/murugananth%20am-c-b47811236/</a></li>
+                <li class="animate__animated animate__fadeInLeft"><i class="fas fa-map-marker-alt"></i> <span>1/195,Melakkadu,Pachikkottai,Alangudi,Pudukkottai,Tamil Nadu-622301</span></li>
+            </ul>
+        </section>
+    </div>
+    <!-- You'll need to include Font Awesome for the icons -->
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

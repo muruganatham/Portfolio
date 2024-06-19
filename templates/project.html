@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: transparent; /* Make the background transparent */
+    background-image: linear-gradient(45deg, #f0f0f0 25%, transparent 25%), linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #f0f0f0 75%), linear-gradient(-45deg, transparent 75%, #f0f0f0 75%);
+    background-size: 50px 50px;
+    background-position: 0 0, 0 0, 50px 50px, 50px 50px;
+    animation: backgroundAnimation 10s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0 0, 0 0, 50px 50px, 50px 50px;
+    }
+    100% {
+        background-position: 50px 50px, 50px 50px, 0 0, 0 0;
+    }
+}
+        .projects-section {
+            padding: 50px;
+            background-color: #d0f0c0;
+        }
+
+        .projects-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: left;
+            background-color: #00695c; /* Dark green background color */
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .card {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .card-body {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.75);
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .card:hover .card-body {
+            opacity: 1;
+        }
+
+        header {
+            background-color: #04720d;
+            color: white;
+            padding: 10px 20px;
+            text-align: left;
+            font-family: Arial, sans-serif;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="animate__animated animate__fadeInDown">PROJECTS</h1>
+    </header>
+    <div class="projects-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="projects-title">PG PROJECT</div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="static/img/song.png" alt="Song and Movie" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">FEMS</h5>
+                            <p class="card-text">The facial emotion-based 
+                                movie and song recommendation system.but 
+                                also incorporates the innovation of playing the 
+                                recommended songs on Spotify and the 
+                                recommended movies on IMDb.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="static/img/image.png" class="card-img-top" alt="Quiz Web-App">
+                        <div class="card-body">
+                            <h5 class="card-title">AITG</h5>
+                            <p class="card-text"> The artificial intelligence-based chatbot system focuses primarily on 
+                                guiding travelers and tourists.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="static/img/CROP.jpeg" class="card-img-top" alt="Blog Web-App">
+                        <div class="card-body">
+                            <h5 class="card-title">TCPA</h5>
+                            <p class="card-text">I Worked on data analysis of the Tamil Nadu 
+                                Crop Production dataset on Kaggle using 
+                                Python.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="projects-title">TEAM PROJECT</div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="static/img/THEARTER.jpeg" class="card-img-top" alt="Music Player Web-App">
+                        <div class="card-body">
+                            <h5 class="card-title">ISCL</h5>
+                            <p class="card-text">I designed the I-Seat Call Light System, an 
+                                innovative project widely utilized in theaters, 
+                                parks, and conferences. This project utilizes IoT 
+                                technology.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

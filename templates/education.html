@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent; /* Make the background transparent */
+  background-image: linear-gradient(45deg, #d0f0c0 25%, transparent 25%), linear-gradient(-45deg, #d0f0c0 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #d0f0c0 75%), linear-gradient(-45deg, transparent 75%, #d0f0c0 75%);
+  background-size: 50px 50px;
+  background-position: 0 0, 0 0, 50px 50px, 50px 50px;
+  animation: backgroundAnimation 10s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0 0, 0 0, 50px 50px, 50px 50px;
+  }
+  100% {
+    background-position: 50px 50px, 50px 50px, 0 0, 0 0;
+  }
+}
+
+    header {
+      background-color: #007D3D;
+      color: white;
+      padding: 20px;
+      text-align: left;
+    }
+
+    .education-section {
+      padding: 20px;
+    }
+
+    .institution {
+      background-color: white;
+      color: #333;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .institution h4 {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .institution h4 i {
+      margin-right: 10px;
+    }
+
+    .institution h4::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: #080a09;
+      transition: width 0.3s;
+    }
+
+    .institution h4:hover::after {
+      width: 100%;
+    }
+
+    .institution-content {
+      flex-grow: 1;
+    }
+
+    .row.equal-height {
+      display: flex;
+    }
+
+    .col-md-6 {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Education</h1>
+  </header>
+  <div class="education-section">
+    <div class="container">
+      <div class="row equal-height">
+        <div class="col-md-6">
+          <div class="institution">
+            <h4><i class="fas fa-university"></i> BHARATHIAR UNIVERSITY</h4>
+            <div class="institution-content">
+              <p>COIMBATORE, TAMIL NADU</p>
+              <p>Degree: Master of Computer Applications<br>
+                Percentage(%): 85/100<BR>
+                2022-2024</p>
+              <p><strong>Relevant Courseworks:</strong></p>
+              <ul>
+                <li><i class="fas fa-book"></i> NPTEL course in cloud computing and distribution system</li>
+                <li><i class="fas fa-book"></i> PowerBI course on Simplilearn</li>
+                <li><i class="fas fa-book"></i> Basic Machine Learning course on Coursera</li>
+                <li><i class="fas fa-book"></i> Basic Python course on Coursera</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="institution">
+            <h4><i class="fas fa-university"></i> H H THE RAJAH'S COLLEGE</h4>
+            <div class="institution-content">
+              <p>PUDUKKOTTAI, TAMIL NADU</p>
+              <p>Degree: Bachelor of Computer Applications<br>
+                Percentage(%): 79.8/100<BR>
+                2019-2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row equal-height">
+        <div class="col-md-6">
+          <div class="institution">
+            <h4><i class="fas fa-school"></i> GOVERNMENT BOYS HIGH SECONDARY SCHOOL</h4>
+            <div class="institution-content">
+              <p>ALANGUDI, TAMIL NADU</p>
+              <p>SSLC<br>
+                Percentage(%): 87/100<BR>
+                2016-2017</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="institution">
+            <h4><i class="fas fa-school"></i> GOVERNMENT BOYS HIGH SECONDARY SCHOOL</h4>
+            <div class="institution-content">
+              <p>ALANGUDI, TAMIL NADU</p>
+              <p>HSC<br>
+                Percentage(%): 71/100<BR>
+                2018-2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
